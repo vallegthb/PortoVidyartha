@@ -157,25 +157,77 @@
     font-size:.9rem;
   }
 
-  @media(max-width:900px){
-    .bph-grid{
-      grid-template-columns:1fr;
-    }
-    .sekb-bottom{
-      flex-direction:column;
-    }
-    .card{
-      flex-direction:column;
-      align-items:center;
-      text-align:center;
-    }
-    .info{
-      grid-template-columns:auto;
-    }
-    .colon{
-      display:none;
-    }
+  @media (max-width:600px){
+
+  section{
+    padding:80px 6%;
   }
+
+  .section-title{
+    font-size:2.1rem;
+    letter-spacing:2px;
+    margin-bottom:55px;
+  }
+
+  /* GRID BPH */
+  .bph-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  /* CARD */
+  .card{
+    max-width:100%;
+    padding:22px 18px;
+    gap:16px;
+  }
+
+  .card img{
+    width:120px;
+    height:160px;
+  }
+
+  .card h3{
+    font-size:1.25rem;
+    margin-bottom:10px;
+  }
+
+  /* INFO TEXT */
+  .info{
+    display:block;
+    font-size:1rem;
+  }
+
+  .label{
+    display:block;
+    margin-top:8px;
+  }
+
+  .colon{
+    display:none;
+  }
+
+  .info div{
+    text-align:center;
+  }
+
+  /* SEKSI BIDANG */
+  .sekb-title{
+    font-size:2rem;
+    margin-bottom:55px;
+  }
+
+  .sekb-top,
+  .sekb-bottom{
+    flex-direction:column;
+    gap:45px;
+  }
+
+  footer{
+    font-size:.8rem;
+    padding:35px 15px;
+  }
+}
   </style>
   </head>
 

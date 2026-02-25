@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Badan Pengurus Harian | OSIS Vidyartha Pranaya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#1b1a17;
+  --gold:#e6d3a3;
+  --soft:#f4ecd8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Crimson Text', serif;
+  background:
+    linear-gradient(rgba(27,26,23,0.8), rgba(27,26,23,0.8)),
+    url('https://i.pinimg.com/736x/3e/95/38/3e9538a7d7b2fe2c68e7e59561b2d098.jpg')
+    no-repeat center center fixed;
+  background-size:cover;
+  color:var(--soft);
+}
+
+section{
+  padding:110px 10%;
+}
+
+.title{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:3rem;
+  letter-spacing:4px;
+  margin-bottom:90px;
+  color:var(--gold);
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1.2s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+.card{
+  width:320px;
+  height:460px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:28px;
+  border-radius:28px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(230,211,163,0.35);
+  box-shadow:0 25px 55px rgba(0,0,0,.35);
+  transition:.45s ease;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:160px;
+  height:200px;
+  border-radius:20px;
+  object-fit:cover;
+  margin-bottom:20px;
+  transition:.45s ease;
+}
+
+.card:hover img{
+  transform:scale(1.18);
+}
+
+.card h3{
+  font-family:'Playfair Display', serif;
+  font-size:1.5rem;
+  color:var(--gold);
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.info{
+  text-align:center;
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.anggota-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:80px;
+}
+
+.row{
+  display:flex;
+  gap:80px;
+  justify-content:center;
+}
+
+.center{
+  justify-content:center;
+}
+
+.proker{
+  margin-top:130px;
+}
+
+.proker h2{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:2.6rem;
+  color:var(--gold);
+  margin-bottom:50px;
+}
+
+.proker-box{
+  max-width:900px;
+  margin:auto;
+  padding:45px 55px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(230,211,163,0.35);
+  backdrop-filter:blur(8px);
+}
+
+.proker-box ul{
+  list-style:none;
+  font-size:1.15rem;
+  line-height:2;
+}
+
+.proker-box li::before{
+  content:"✦ ";
+  color:var(--gold);
+}
+
+footer{
+  text-align:center;
+  padding:45px;
+  opacity:.6;
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+  .row{
+    flex-direction:column;
+    gap:50px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="fade">
+  <h1 class="title">
+    SEKSI BIDANG 1<br>
+    KEIMANAN DAN KETAKWAAN
+  </h1>
+
+  <div class="anggota-wrap">
+
+    <div class="row center">
+      <div class="card fade">
+        <img src="../img/70.png" alt="Ketua">
+        <h3>Rafif Firza Putra</h3>
+        <div class="info">
+          XI PPLG 2<br>
+          Ketua<br>
+          "Hidup bukan untuk menunjukkan seberapa benar dirimu, tapi membuktikan seberapa berguna dirimu"
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card fade">
+        <img src="../img/72.png" alt="Sekretaris 1">
+        <h3>Aurello Valent Al Hakim</h3>
+        <div class="info">
+          XI PPLG 2<br>
+          Sekretaris 1<br>
+          “Work hard in silence. Let your success be your noise”
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/73.png" alt="Bendahara 1">
+        <h3>Laily Azkia Artikaningrum</h3>
+        <div class="info">
+          XI DKV 3<br>
+          Bendahara 1<br>
+          “Jangan biarkan rasa takut menghentikan mimpi besar”
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="card fade">
+        <img src="../img/70.png" alt="Wakil Ketua">
+        <h3>Sarah Amaura Indriatmoko</h3>
+        <div class="info">
+          X DKV 3<br>
+          Wakil Ketua<br>
+          “Live fast, stay raw, let them talk later”
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card fade">
+        <img src="../img/72.png" alt="Sekretaris 2">
+        <h3>Hadista Zara Melani</h3>
+        <div class="info">
+          X DKV 3<br>
+          Sekretaris 2<br>
+          “Jika orang lain bisa, maka aku juga bisa”
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/102.png" alt="Bendahara 2">
+        <h3>Lavina Paramitha Putri Johandy</h3>
+        <div class="info">
+          X LK 2<br>
+          Bendahara 2<br>
+          “If you can't see anything beautiful in your self, get a better mirror”
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="proker fade">
+    <h2>PROGRAM KERJA</h2>
+    <div class="proker-box">
+      <ul>
+        <li><b>Eksis (Edukasi OSIS)</b></li>
+        <li>Study Banding</li>
+        <li>Menyetel musik saat waktu break time</li>
+        <li>Pembuatan dan publikasi konten prestasi siswa</li>
+        <li>Pelaksanaan program <b>EcoBreak</b></li>
+        <li>Menerapkan budaya <b>5S</b> (Senyum, Salam, Sapa, Sopan, Santun)</li>
+        <li>Membantu pelaksanaan program kerja setiap Sekbid</li>
+        <li>Menerapkan <b>PLH</b> satu bulan sekali pada minggu terakhir serta melaksanakan kegiatan senam</li>
+        <li>Pertemuan seluruh organisasi sekolah</li>
+        <li>Pelaksanaan podcast OSIS</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © OSIS SMK NEGERI 8 SEMARANG — VIDYARTHA PRANAYA
+  </footer>
+
+</section>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach((entry,i)=>{
+    if(entry.isIntersecting){
+      setTimeout(()=>{
+        entry.target.classList.add('show');
+      }, i*120);
+    }
+  });
+},{threshold:0.2});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

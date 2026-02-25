@@ -1,0 +1,680 @@
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+  <meta charset="UTF-8">
+  <title>Anggota OSIS | Vidyartha Pranaya</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text&display=swap" rel="stylesheet">
+
+  <style>
+  :root{
+    --bg:#1b1a17;
+    --gold:#e6d3a3;
+    --soft:#f4ecd8;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  body{
+    font-family:'Crimson Text', serif;
+    background: 
+    linear-gradient(rgba(27,26,23,0.8), rgba(27,26,23,0.8)),
+      url('https://i.pinimg.com/736x/3e/95/38/3e9538a7d7b2fe2c68e7e59561b2d098.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color:var(--soft);
+    overflow-x:hidden;
+  }
+
+  section{
+    padding:120px 10%;
+  }
+
+  .back{
+    display:inline-block;
+    margin-bottom:60px;
+    color:var(--gold);
+    text-decoration:none;
+    font-size:1.1rem;
+    transition:.3s;
+  }
+  .back:hover{
+    letter-spacing:1px;
+  }
+
+  .section-title{
+    text-align:center;
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    letter-spacing:4px;
+    margin-bottom:90px;
+    color:var(--gold);
+  }
+
+  .fade{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1.2s ease;
+  }
+  .fade.show{
+    opacity:1;
+    transform:none;
+  }
+
+  .card{
+    width:100%;
+    max-width:600px;
+    min-height:300px;
+    height:auto;
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:22px;
+    padding:28px;
+
+    border-radius:28px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(230,211,163,0.35);
+    box-shadow:0 25px 55px rgba(0,0,0,.35);
+    transition:.45s ease;
+    overflow:hidden;
+  }
+
+
+  .card:hover{
+    transform:translateY(-10px);
+  }
+
+  .card img{
+    width:140px;
+    height:190px;
+    border-radius:18px;
+    object-fit:cover;
+    background:rgba(255,255,255,0.1);
+    flex-shrink:0;  
+    transition:.45s ease;
+  }
+
+
+  .card:hover img{
+    transform:scale(1.18);
+  }
+
+  .card h3{
+    font-family:'Playfair Display', serif;
+    font-size:1.5rem;
+    color:var(--gold);
+    margin-bottom:15px;
+    text-align:center;
+  }
+
+  .info{
+    display:grid;
+    grid-template-columns:100px 20px auto;
+    row-gap:10px;
+    font-size:1.05rem;
+  }
+
+  .label{
+    font-weight:bold;
+  }
+  .colon{
+    text-align:center;
+  }
+
+  .bph-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:70px;
+    justify-items:center;
+  }
+
+  .sekb-title{
+    text-align:center;
+    font-family:'Playfair Display', serif;
+    font-size:2.6rem;
+    margin-bottom:80px;
+    color:var(--gold);
+  }
+
+  .sekb-top{
+    display:flex;
+    justify-content:center;
+    margin-bottom:55px;
+  }
+
+  .sekb-bottom{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+  }
+
+  footer{
+    text-align:center;
+    padding:45px;
+    opacity:.6;
+    font-size:.9rem;
+  }
+
+  @media(max-width:900px){
+    .bph-grid{
+      grid-template-columns:1fr;
+    }
+    .sekb-bottom{
+      flex-direction:column;
+    }
+    .card{
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+    .info{
+      grid-template-columns:auto;
+    }
+    .colon{
+      display:none;
+    }
+  }
+  </style>
+  </head>
+
+  <body>
+
+  <section class="fade">
+    <h1 class="section-title">BADAN PENGURUS HARIAN</h1>
+
+    <div class="bph-grid">
+
+      <div class="card fade">
+        <img src="../img/70.png">
+        <div>
+          <h3>Rafif Firza Putra</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Ketua OSIS</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Hidup bukan untuk menunjukkan seberapa benar dirimu, tapi membuktikan seberapa berguna dirimu</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/71.png">
+        <div>
+          <h3>Sarah Amaura Indriatmoko</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Wakil Ketua</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Live fast, stay raw, let them talk later </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/72.png">
+        <div>
+          <h3>Aurello Valent Al Hakim</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Sekretaris 1</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Work hard in silence. Let your success be your noise</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/74.png">
+        <div>
+          <h3>Hadista Zara Melani</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Sekretaris 2</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Jika orang lain bisa, maka aku juga bisa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/73.png">
+        <div>
+          <h3>Laily Azkia Artikaningrum</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI DKV 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Bendahara 1</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Keberhasilan lahir dari keberanian untuk mencoba</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/102.png">
+        <div>
+          <h3>Lavina Paramitha Putri Johandy</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X LK 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Bendahara 2</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>If you can't see anything beautiful in your self, get a better mirror</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 1</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/75.png">
+        <div>
+          <h3>Gicceila Putri Almira</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI DKV 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 1</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Gunakan kompas hati untuk mencari kebahagiaan, bukan untuk mencari kesalahan orang yang tidak penting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/76.png">
+        <div>
+          <h3>Galuh Kirana Anindya Putri</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 1</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>You can just think easily like do re mi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/77.png">
+        <div>
+          <h3>Bernadetha Angel Dibriana</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 1</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Jangan biarkan rasa takut menghentikan mimpi besar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 2</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/79.png">
+        <div>
+          <h3>Reihana Azimatus Zahra</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI LK 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 2 </div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Belajarlah bila tidak ingin tertinggal, semua ini persaingan untuk masa depan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/78.png">
+        <div>
+          <h3>Aliya Bunga Fatima </h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1 </div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 2</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Life becomes a masterpiece when you master inner peace</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/80.png">
+        <div>
+          <h3>Lovexia Zafeerah Larasati</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 2</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>A pretty face is nothing if you have an ugly heart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 3</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/99.png">
+        <div>
+          <h3>Ciqita Ayu Maharani</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI LK 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 3</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>People come and go, but i believe Allah would never go</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/98.png">
+        <div>
+          <h3>Khayra Kafka Nur Annisa</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 3</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Kegagalan bukan akhir tapi awal untuk bangkit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/94.png">
+        <div>
+          <h3>Valencia Grisenda Maheswari</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 3</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Dalam setiap kesulitan ada pelajaran yang berharga</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 4</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/96.png">
+        <div>
+          <h3>Defan Maulana Asyar</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 4</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Winners never quit, and quitters never win</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/97.png">
+        <div>
+          <h3>Virda Sekar Putri Herlina</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X LK 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 4</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Melangkah pelan bukan berarti berhenti untuk bermimpi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/95.png">
+        <div>
+          <h3>Azzahroo Nasywaa Salsabiila</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 4</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Keep trying even when things feel difficult</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 5</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/81.png">
+        <div>
+          <h3>Pandhega Rafif Abror</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI TJKT 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 5</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>لا تدع الأمس يحطم اليوم
+            <br>(Jangan biarkan kemarin menghancurkan hari ini)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/83.png">
+        <div>
+          <h3>Ibanisa Dewi Pratiwi </h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 5</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Even in sorrow, my soul chooses gentleness.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/82.png">
+        <div>
+          <h3>Hilal Abiyu Jamail</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 5</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Heroes rise when the world needs hope</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 6</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/84.png">
+        <div>
+          <h3>Zahra Rizky Megasaputri</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI DKV 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 6</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Hidup adalah perjalanan panjang, jangan takut jatuh, karena setiap kegagalan adalah pelajaran berharga menuju keberhasilan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/86.png">
+        <div>
+          <h3>Ravidya Satrio Adi</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 6</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Urip iku urup, be a light that brings meaningful impact to others.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/85.png">
+        <div>
+          <h3>Ezra Azka Hardanu</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 6</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Hidup tidak untuk disamakan, tetapi untuk dijalani</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 7</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/93.png">
+        <div>
+          <h3>Victor Dwi Yuli Setiawan</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI TJKT 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 7</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Good Game Nice Try Well Played</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/87.png">
+        <div>
+          <h3>Annisa Khurun'ain</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 3</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 7</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Di awali bismillah di temani insyaallah di akhiri Alhamdulillah.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/88.png">
+        <div>
+          <h3>Vian Rezky Hartanto</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 7</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Nothing last's forever, we can change the future.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 8</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/101.png">
+        <div>
+          <h3>Cherish Putria Salsabilla</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI DKV 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 8</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Great things never come from comfort zones.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/90.png">
+        <div>
+          <h3>Nashwa Aulia Ramadhani </h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 8</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Teruslah berusaha, jangan pernah lelah untuk melakukan hal baik.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/89.png">
+          <div>
+          <h3> Maria Kinanti Cata Jaya</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 8</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>I'm a museum of everything I have loved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fade">
+    <h2 class="sekb-title">SEKSI BIDANG 9</h2>
+
+    <div class="sekb-top">
+      <div class="card fade">
+        <img src="../img/91.png">
+        <div>
+          <h3>Tabita Nuri Audrenia</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Kepala Sekbid 9</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Being a beginner in something is'nt a crime, but underestimate people learning i</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sekb-bottom">
+      <div class="card fade">
+        <img src="../img/100.png">
+        <div>
+          <h3>Arsa Pradityo Nugroho </h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>XI PPLG 2</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 9</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Uang bukan segalanya, tapi segalanya butuh uang</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/92.png">
+        <div>
+          <h3>Rijal Faiq</h3>
+          <div class="info">
+            <div class="label">Kelas</div><div class="colon">:</div><div>X DKV 1</div>
+            <div class="label">Jabatan</div><div class="colon">:</div><div>Anggota Sekbid 9</div>
+            <div class="label">Motto</div><div class="colon">:</div><div>Buat langkah kecil setiap saat. takpa kecil, namun pasti</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © OSIS SMK NEGERI 8 SEMARANG — VIDYARTHA PRANAYA
+  </footer>
+
+  <script>
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach((entry,i)=>{
+      if(entry.isIntersecting){
+        setTimeout(()=>{
+          entry.target.classList.add('show');
+        }, i*120);
+      }
+    });
+  },{threshold:0.2});
+
+  document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+  </script>
+
+  </body>
+  </html>

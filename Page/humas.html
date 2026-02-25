@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sekbid 5 | OSIS Vidyartha Pranaya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#1b1a17;
+  --gold:#e6d3a3;
+  --soft:#f4ecd8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Crimson Text', serif;
+  background:
+    linear-gradient(rgba(27,26,23,0.8), rgba(27,26,23,0.8)),
+    url('https://i.pinimg.com/736x/3e/95/38/3e9538a7d7b2fe2c68e7e59561b2d098.jpg')
+    no-repeat center center fixed;
+  background-size:cover;
+  color:var(--soft);
+}
+
+section{
+  padding:110px 10%;
+}
+
+.title{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:3rem;
+  letter-spacing:4px;
+  margin-bottom:90px;
+  color:var(--gold);
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1.2s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+.card{
+  width:320px;
+  height:460px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:28px;
+  border-radius:28px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(230,211,163,0.35);
+  box-shadow:0 25px 55px rgba(0,0,0,.35);
+  transition:.45s ease;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:160px;
+  height:200px;
+  border-radius:20px;
+  object-fit:cover;
+  background:rgba(255,255,255,0.1);
+  margin-bottom:20px;
+  transition:.45s ease;
+}
+
+.card:hover img{
+  transform:scale(1.18);
+}
+
+.card h3{
+  font-family:'Playfair Display', serif;
+  font-size:1.5rem;
+  color:var(--gold);
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.info{
+  text-align:center;
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.anggota-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:70px;
+}
+
+.anggota-bawah{
+  display:flex;
+  gap:80px;
+}
+
+.proker{
+  margin-top:130px;
+}
+
+.proker h2{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:2.6rem;
+  color:var(--gold);
+  margin-bottom:50px;
+}
+
+.proker-box{
+  max-width:900px;
+  margin:auto;
+  padding:45px 55px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(230,211,163,0.35);
+  backdrop-filter:blur(8px);
+}
+
+.proker-box ul{
+  list-style:none;
+  font-size:1.15rem;
+  line-height:2;
+}
+
+.proker-box li{
+  position:relative;
+  padding-left:28px;
+  margin-bottom:1px;
+}
+
+.proker-box li::before{
+  content:"✦";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+}
+
+
+footer{
+  text-align:center;
+  padding:45px;
+  opacity:.6;
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+  .anggota-bawah{
+    flex-direction:column;
+    gap:50px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="fade">
+  <h1 class="title">
+    SEKSI BIDANG 5<br>
+    HUBUNGAN MASYARAKAT
+  </h1>
+
+  <div class="anggota-wrap">
+
+    <div class="card fade">
+      <img src="../img/81.png" alt="Pandhega Rafif Abror">
+      <h3>Pandhega Rafif Abror</h3>
+      <div class="info">
+        XI TJKT 2<br>
+        Kepala Sekbid 5<br>
+        "لا تدع الأمس يحطم اليوم<br>
+        (Jangan biarkan kemarin menghancurkan hari ini)"
+      </div>
+    </div>
+
+    <div class="anggota-bawah">
+
+      <div class="card fade">
+        <img src="../img/83.png" alt="Ibanisa Dewi Pratiwi">
+        <h3>Ibanisa Dewi Pratiwi</h3>
+        <div class="info">
+          X PPLG 1<br>
+          Anggota Sekbid 5<br>
+          “Even in sorrow, my soul chooses gentleness.”
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/82.png" alt="Hilal Abiyu Jamail">
+        <h3>Hilal Abiyu Jamail</h3>
+        <div class="info">
+          X DKV 2<br>
+          Anggota Sekbid 5<br>
+          “Heroes rise when the world needs hope”
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="proker fade">
+    <h2>PROGRAM KERJA</h2>
+    <div class="proker-box">
+     <ul>
+        <li>Mengaktifkan dan mengelola akun media sosial OSIS, yaitu Instagram dan TikTok <b>@dailysnapan</b></li>
+        <li>Aktif membagikan informasi seputar event, kegiatan sekolah, dan agenda OSIS melalui Instagram <b>@dailysnapan</b></li>
+        <li>Aktif membalas pesan masuk melalui Instagram <b>@dailysnapan</b> maupun email sebagai bentuk pelayanan informasi</li>
+        <li>Berkoordinasi dengan tim TIK untuk menyusun dan mengatur deadline postingan konten di akun <b>@dailysnapan</b></li>
+        <li>Mendengarkan, memahami, serta menyaring kritik dan saran dari siswa sebagai bahan evaluasi kinerja OSIS maupun sekolah</li>
+        <li>Menjalin hubungan baik dan bersosialisasi dengan seluruh warga sekolah</li>
+        <li>Menjalin kerja sama sponsorship dengan pihak luar guna mendukung kegiatan OSIS</li>
+        <li>Membantu mencari serta menyukseskan event bersponsor dengan bekerja sama bersama KKWU, serta memastikan target audiens dan partisipan event</li>
+        <li>Membantu mempromosikan UMKM dan dagangan seluruh murid SMK Negeri 8 Semarang melalui media sosial OSIS</li>
+        <li><b>SnapAsk (Snapan Ask Before the Event)</b> membuka QnA Box sebelum event sebagai sarana survei dan penjaringan aspirasi siswa</li>
+        <li>Berkolaborasi dengan Sekbid 6 dalam promosi dagangan dan karya murid</li>
+        <li>Membantu dan melaksanakan kegiatan Study Banding</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © OSIS SMK NEGERI 8 SEMARANG — VIDYARTHA PRANAYA
+  </footer>
+
+</section>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach((entry,i)=>{
+    if(entry.isIntersecting){
+      setTimeout(()=>{
+        entry.target.classList.add('show');
+      }, i*120);
+    }
+  });
+},{threshold:0.2});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

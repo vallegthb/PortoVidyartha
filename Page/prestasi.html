@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sekbid 4 | OSIS Vidyartha Pranaya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#1b1a17;
+  --gold:#e6d3a3;
+  --soft:#f4ecd8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Crimson Text', serif;
+  background:
+    linear-gradient(rgba(27,26,23,0.8), rgba(27,26,23,0.8)),
+    url('https://i.pinimg.com/736x/3e/95/38/3e9538a7d7b2fe2c68e7e59561b2d098.jpg')
+    no-repeat center center fixed;
+  background-size:cover;
+  color:var(--soft);
+}
+
+section{
+  padding:110px 10%;
+}
+
+.title{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:3rem;
+  letter-spacing:4px;
+  margin-bottom:90px;
+  color:var(--gold);
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1.2s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+.card{
+  width:320px;
+  height:460px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:28px;
+  border-radius:28px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(230,211,163,0.35);
+  box-shadow:0 25px 55px rgba(0,0,0,.35);
+  transition:.45s ease;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:160px;
+  height:200px;
+  border-radius:20px;
+  object-fit:cover;
+  background:rgba(255,255,255,0.1);
+  margin-bottom:20px;
+  transition:.45s ease;
+}
+
+.card:hover img{
+  transform:scale(1.18);
+}
+
+.card h3{
+  font-family:'Playfair Display', serif;
+  font-size:1.2rem;
+  color:var(--gold);
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.info{
+  text-align:center;
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.anggota-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:70px;
+}
+
+.anggota-bawah{
+  display:flex;
+  gap:80px;
+}
+
+.proker{
+  margin-top:130px;
+}
+
+.proker h2{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:2.6rem;
+  color:var(--gold);
+  margin-bottom:50px;
+}
+
+.proker-box{
+  max-width:900px;
+  margin:auto;
+  padding:45px 55px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(230,211,163,0.35);
+  backdrop-filter:blur(8px);
+}
+
+.proker-box ul{
+  list-style:none;
+  font-size:1.15rem;
+  line-height:2;
+}
+
+.proker-box li{
+  position:relative;
+  padding-left:28px;
+  margin-bottom:1px;
+}
+
+.proker-box li::before{
+  content:"✦";
+  position:absolute;
+  left:0;
+  color:var(--gold);
+}
+
+footer{
+  text-align:center;
+  padding:45px;
+  opacity:.6;
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+  .anggota-bawah{
+    flex-direction:column;
+    gap:50px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="fade">
+  <h1 class="title">
+    SEKSI BIDANG 4<br>
+    SENI, MINAT BAKAT DAN PRESTASI
+  </h1>
+
+  <div class="anggota-wrap">
+
+    <div class="card fade">
+      <img src="../img/96.png">
+      <h3>Defan Maulana Asyar</h3>
+      <div class="info">
+        XI PPLG 3<br>
+        Kepala Sekbid 4<br>
+        "Winners never quit, and quitters never win"
+      </div>
+    </div>
+
+    <div class="anggota-bawah">
+
+      <div class="card fade">
+        <img src="../img/97.png">
+        <h3>Virda Sekar Putri Herlina</h3>
+        <div class="info">
+          X LK 2<br>
+          Anggota Sekbid 4<br>
+          “Melangkah pelan bukan berarti berhenti untuk bermimpi”
+        </div>
+      </div>
+
+      <div class="card fade">
+        <img src="../img/95.png">
+        <h3>Azzahroo Nasywaa Salsabiila</h3>
+        <div class="info">
+          X PPLG 3<br>
+          Anggota Sekbid 4<br>
+          “Keep trying even when things feel difficult”
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="proker fade">
+    <h2>PROGRAM KERJA</h2>
+    <div class="proker-box">
+      <ul>
+        <li>Merealisasikan informasi-informasi lomba di offline maupun online</li>
+        <li>Membantu BK untuk membuat angket minat dan bakat saat MPLS</li>
+        <li>Memberikan apresiasi kepada siswa SMKN 8 yang sudah memperoleh prestasi</li>
+        <li>Mengadakan event fashion show dan pameran seni pada saat hari Kartini</li>
+        <li>Membuat konten yang berisi wawancara siswa berprestasi saat sesudah upacara</li>
+        <li>Membuat konten promosi dan dokumentasi ekstrakurikuler yang ada di SMKN 8 untuk dipublikasikan di media sosial OSIS</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © OSIS SMK NEGERI 8 SEMARANG — VIDYARTHA PRANAYA
+  </footer>
+
+</section>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach((entry,i)=>{
+    if(entry.isIntersecting){
+      setTimeout(()=>{
+        entry.target.classList.add('show');
+      }, i*120);
+    }
+  });
+},{threshold:0.2});
+
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

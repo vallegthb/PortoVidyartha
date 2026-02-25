@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>VIDYARTHA PRANAYA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Crimson+Text&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#1b1a17;
+  --gold:#e6d3a3;
+  --soft:#f4ecd8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Crimson Text', serif;
+  background: 
+    linear-gradient(rgba(27,26,23,0.8), rgba(27,26,23,0.8)),
+    url('https://i.pinimg.com/736x/3e/95/38/3e9538a7d7b2fe2c68e7e59561b2d098.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color:var(--soft);
+  overflow-x:hidden;
+}
+
+section{
+  padding:120px 10%;
+  position:relative;
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display', serif;
+  color:var(--gold);
+}
+
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1.1s ease;
+}
+.fade-up.show{
+  opacity:1;
+  transform:none;
+}
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  align-items:center;
+  gap:80px;
+}
+
+.hero-text{
+  padding-left:80px;
+}
+
+.hero-text h1{
+  font-size:4.8rem;
+  letter-spacing:3px;
+}
+
+.hero-text p{
+  font-size:1.45rem;
+  margin-top:20px;
+  max-width:600px;
+}
+
+.maskot{
+  margin-left:auto;
+  width:340px;
+  height:460px;
+  border-radius:180px 180px 40px 40px;
+  border:2px dashed var(--gold);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-style:italic;
+  animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-18px)}
+}
+
+#tentang{
+  background:linear-gradient(180deg,transparent,#211f1a 40%,transparent);
+}
+
+#tentang h2{
+  text-align:center;
+  font-size:2.8rem;
+  margin-bottom:55px;
+}
+
+#tentang p{
+  max-width:1050px;
+  margin:auto;
+  text-align:center;
+  font-size:1.25rem;
+  line-height:2.1;
+}
+
+.sambutan{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+.ketua-card{
+  text-align:center;
+}
+
+.ketua-foto{
+  width:240px;
+  height:310px;
+  margin:auto;
+  border-radius:30px;
+  border:2px solid var(--gold);
+  margin-bottom:18px;
+  background:rgba(255,255,255,0.1);
+  position:relative;
+  overflow:visible;      
+  z-index:1;
+}
+
+.ketua-foto::before{
+  content:"";
+  position:absolute;
+  top:-95px;          
+  left:-20px;
+  right:-20px;
+  bottom:0px;
+
+  background:url('../Oasis/img/70.png') center/cover no-repeat;
+  border-radius:26px;
+  z-index:2;        
+  transition:.6s ease;
+}
+
+.sambutan-text{
+  font-size:1.25rem;
+  line-height:2;
+}
+
+#program h2{
+  text-align:center;
+  font-size:2.8rem;
+  margin-bottom:75px;
+}
+
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:35px;
+}
+
+.program-card{
+  padding:40px 30px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(6px);
+  border:1px solid rgba(230,211,163,0.5);
+  text-align:center;
+  transition:.4s ease;
+}
+
+.program-link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+}
+
+.program-card:hover{
+  transform:translateY(-10px) scale(1.04);
+  background:rgba(230,211,163,0.1);
+}
+
+.ajak{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.ajak p{
+  font-size:1.25rem;
+  margin-bottom:25px;
+}
+
+.ajak a{
+  display:inline-block;
+  margin-top:20px;
+  font-size:1.35rem;
+  color:var(--gold);
+  text-decoration:none;
+  position:relative;
+}
+
+.ajak a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:1px;
+  background:var(--gold);
+  transition:.4s;
+}
+
+.ajak a:hover::after{
+  width:100%;
+}
+
+footer{
+  text-align:center;
+  padding:45px;
+  opacity:.6;
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+  .hero,.sambutan{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .hero-text{
+    padding-left:0;
+  }
+  .maskot{
+    margin:40px auto 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero fade-up">
+  <div class="hero-text">
+    <h1>VIDYARTHA<br>PRANAYA</h1>
+    <p>Mengabdi dengan ilmu dan kepedulian</p>
+  </div>
+
+  <div class="maskot">
+    Tempat Maskot Animasi
+  </div>
+</section>
+
+<section id="tentang" class="fade-up">
+  <h2>Tentang OSIS</h2>
+  <p>
+    Organisasi Siswa Intra Sekolah (OSIS) merupakan ruang pembelajaran yang membentuk
+    karakter, kepemimpinan, serta kepedulian sosial peserta didik. OSIS hadir sebagai
+    wadah untuk mengembangkan potensi siswa secara aktif melalui berbagai kegiatan
+    yang terstruktur, kreatif, dan bermakna. Kegiatan-kegiatan ini tidak hanya
+    meningkatkan keterampilan akademik, tetapi juga mengasah kemampuan organisasi,
+    komunikasi, dan kerja sama dalam tim.
+    <br><br>
+    Dengan semangat <strong>VIDYARTHA PRANAYA</strong>, OSIS berkomitmen menjadi
+    penggerak dinamika sekolah yang mendorong kebersamaan, kreativitas, serta
+    pengabdian kepada sesama. Melalui partisipasi aktif, setiap siswa belajar memimpin,
+    menyampaikan ide, dan bertanggung jawab terhadap lingkungan sekolah. OSIS juga
+    menjadi jembatan bagi aspirasi siswa untuk tersalurkan secara konstruktif,
+    menciptakan suasana sekolah yang harmonis dan inspiratif.
+  </p>
+</section>
+
+<section class="sambutan fade-up">
+  <div class="ketua-card">
+    <div class="ketua-foto"></div>
+    <h3>Rafif Firza Putra</h3>
+    <p>Ketua OSIS</p>
+  </div>
+
+  <div class="sambutan-text">
+    Assalamu’alaikum warahmatullahi wabarakatuh.
+    <br><br>
+    Salam hangat untuk seluruh warga sekolah. Sebagai Ketua OSIS, saya merasa
+    bangga dapat memimpin organisasi ini sebagai ruang pembelajaran untuk tumbuh,
+    berproses, dan mengabdi. OSIS hadir sebagai wadah bagi setiap siswa untuk
+    mengembangkan potensi diri, meningkatkan kepemimpinan, dan menumbuhkan
+    kepedulian sosial yang nyata.
+    <br><br>
+    Dengan semangat kebersamaan, kerja sama, dan tanggung jawab, kami berupaya
+    menghadirkan program-program yang bermanfaat dan bermakna bagi seluruh warga
+    sekolah. Semoga setiap kegiatan OSIS dapat menjadi pengalaman berharga yang
+    menginspirasi kita semua untuk berprestasi, berkarya, dan berkontribusi
+    secara positif bagi sekolah dan lingkungan sekitar.
+    <br><br>
+    Terima kasih atas dukungan dan partisipasi semua pihak. Mari bersama-sama
+    mewujudkan sekolah yang harmonis, kreatif, dan penuh semangat.
+  </div>
+</section>
+
+<section id="program" class="fade-up">
+  <h2>PROGRAM KERJA</h2>
+  <div class="program-grid">
+    <a href="../Oasis/Page/bph.html" class="program-link"><div class="program-card">BPH</div></a>
+    <a href="../Oasis/Page/agama.html" class="program-link"><div class="program-card">Seksi Bidang 1</div></a>
+    <a href="../Oasis/Page/budi.html" class="program-link"><div class="program-card">Seksi Bidang 2</div></a>
+    <a href="../Oasis/Page/bela.html" class="program-link"><div class="program-card">Seksi Bidang 3</div></a>
+    <a href="../Oasis/Page/prestasi.html" class="program-link"><div class="program-card">Seksi Bidang 4</div></a>
+    <a href="../Oasis/Page/humas.html" class="program-link"><div class="program-card">Seksi Bidang 5</div></a>
+    <a href="../Oasis/Page/kkwu.html" class="program-link"><div class="program-card">Seksi Bidang 6</div></a>
+    <a href="../Oasis/Page/olahraga.html" class="program-link"><div class="program-card">Seksi Bidang 7</div></a>
+    <a href="../Oasis/Page/bahasa.html" class="program-link"><div class="program-card">Seksi Bidang 8</div></a>
+    <a href="../Oasis/Page/tik.html" class="program-link"><div class="program-card">Seksi Bidang 9</div></a>
+  </div>
+</section>
+
+<section class="ajak fade-up">
+  <p>
+    Setiap program OSIS dijalankan oleh individu yang memiliki dedikasi dan
+    tanggung jawab dalam mengabdi.
+  </p>
+  <p>
+    Mari mengenal lebih dekat para pengurus OSIS yang menjadi penggerak
+    utama organisasi.
+  </p>
+  <a href="anggota.html">Kenali Anggota OSIS →</a>
+</section>
+
+<footer>
+  © OSIS SMK NEGERI 8 SEMARANG — VIDYARTHA PRANAYA
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  })
+},{threshold:0.2});
+
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

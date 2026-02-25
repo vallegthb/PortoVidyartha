@@ -224,83 +224,39 @@ footer{
 
 @media (max-width:600px){
   section{
-    padding:90px 7%;
+    padding:80px 6%;
   }
 
-  /* HERO */
-  .hero{
-    grid-template-columns:1fr;
-    gap:40px;
-    text-align:center;
-  }
-
-  .hero-text h1{
-    font-size:3rem;
-    letter-spacing:2px;
-  }
-
-  .hero-text p{
-    font-size:1.15rem;
-    margin:15px auto 0;
-  }
-
-  .maskot{
-    width:260px;
-    height:360px;
-    margin:30px auto 0;
-  }
-
-  /* TENTANG */
-  #tentang h2{
-    font-size:2.2rem;
-  }
-
-  #tentang p{
-    font-size:1.1rem;
-    line-height:1.9;
-    text-align:center;
-  }
-
-  /* SAMBUTAN */
+  /* SAMBUTAN FIX TOTAL */
   .sambutan{
-    grid-template-columns:1fr;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     text-align:center;
-    gap:45px;
+    gap:35px;
   }
 
-  .sambutan-text{
-    font-size:1.1rem;
-    line-height:1.85;
-    text-align:center;
+  .ketua-card{
+    order:1;
   }
 
   .ketua-foto{
-    width:210px;
-    height:280px;
+    width:200px;
+    height:260px;
   }
 
-  /* PROGRAM */
-  #program h2{
-    font-size:2.3rem;
-  }
-
-  .program-card{
-    padding:32px 20px;
+  .sambutan-text{
+    order:2;
+    max-width:520px;
+    margin:auto;
     font-size:1.05rem;
+    line-height:1.75;
+    text-align:center;
   }
 
-  /* AJAK */
-  .ajak p{
-    font-size:1.1rem;
-  }
-
-  .ajak a{
-    font-size:1.2rem;
-  }
-
-  footer{
-    font-size:.8rem;
-    padding:35px 20px;
+  /* BIAR TEKS NGGAK TERLALU PANJANG KE BAWAH */
+  .sambutan-text br{
+    display:none;
   }
 }
 </style>
